@@ -3,24 +3,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Procurement page</title>
+    <link rel="stylesheet" href="./css/procurement.css">
 </head>
 <body>
+    <div class="overlay"></div>
+    <div class="form-container">
     <form action="">
         <h1>Procurement Entry Form</h1>
 <!-- Supplier Information -->
-        <fieldset>
-            <legend>Supplier Information</legend>
+        <fieldset class="supplier-information">
+            <legend class="header">Supplier Information</legend>
 
-    <label for="">Supplier Name</label>
+        
+    <label for="" >Supplier Name</label><br>
     <input type="text" placeholder="Enter Supplier Name" required>
 
-    <label for="">Supplier Contact</label>
+
+  
+    <label for="" class="suppier">Supplier Contact</label><br>
     <input type="tel" placeholder="+256xxxxxxxxx" required>
         </fieldset>
-<!-- 
-Purchase Details -->
+<!-- Purchase Details -->
     <fieldset>
-        <legend>Purchase Details</legend>
+        <legend class="header">Purchase Details</legend>
         <label for="">Purchase Date</label>
     <input type="date">
 
@@ -37,7 +42,7 @@ Purchase Details -->
 
     <!-- Product Information -->
 <fieldset>
-    <legend>Product Information</legend>
+    <legend class="header">Product Information</legend>
 
             <label for="">Product Name</label>
     <input type="text" placeholder="Enter Product Name" required>
@@ -63,9 +68,9 @@ Purchase Details -->
 </fieldset>
  
 
-
+<!-- Payment Information -->
 <fieldset>
-    <legend>Payment Information</legend>
+    <legend class="header">Payment Information</legend>
 <label for="">Payment Method</label>
      <label>
     <input type="radio" name="payment_method" value="Cash" required>
@@ -108,5 +113,7 @@ Purchase Details -->
     <button type="submit">Reset</button>
     
     </form>
+</div>
+   
 </body>
 </html>
