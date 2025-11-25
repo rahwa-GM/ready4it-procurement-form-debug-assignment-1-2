@@ -2,17 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/sales.css">
+</head>
     <title>Sales Page</title>
   </head>
   <body>
     <!-- Sales Entry Form  -->
-    <h1>Sales Entry Form</h1>
+    
     <form action="">
-      <fieldset>
+      <h1>Sales Entry Form</h1>
+      <fieldset class="container-field">
         <legend>Sales Information</legend>
 
         <label for="">Sale ID / Receipt Number</label>
-        <input type="text" name="" id="" readonly />
+        <input type="text" name="" id="" readonly /><br>
 
         <label for="">Sale Date & Time</label>
         <input type="datetime-local" name="" id="" />
@@ -21,13 +24,13 @@
       <fieldset>
         <legend>Customer Information</legend>
         <label for="">Customer Name</label>
-        <input type="text" name="" aria-label="Customer Name" id="" placeholder="Enter Customer Name" />
+        <input type="text" name="" aria-label="Customer Name" id="" placeholder="Enter Customer Name" /><br>
 
         <label for="">Customer Phone</label>
-    <input type="tel" name="" aria-label="Customer Phone" id="" placeholder="+256xxxxxxxxx" />
+    <input type="tel" name="" aria-label="Customer Phone" id="" placeholder="+256xxxxxxxxx" /><br>
 
         <label for="">Customer Email</label>
-        <input type="email" name="" aria-label="Customer Email" id="" placeholder="customer@example.com" />
+        <input type="email" name="" aria-label="Customer Email" id="" placeholder="customer@example.com" /><br>
 
         <label for="">Customer Type</label>
         <label for="">
@@ -45,11 +48,11 @@
           Credit Customer
         </label>
       </fieldset>
-
+<!--product information-->
       <fieldset>
         <legend>Product Information</legend>
-        <label for="">Product Name</label><br>
-        <input name="text" id="" placeholder="eg. TV"></input>
+        <label for="">Product Name</label>
+        <input name="text" id="" placeholder="eg. TV"></input><br>
 
         <label for="">Product Category</label>
         <select name="product_category" id="">
@@ -61,24 +64,24 @@
         </select>
 
         <label for="">Quantity Sold</label>
-        <input type="number" name="" id="" />
+        <input type="number" name="" id="" /><br>
 
         <label for="">Unit Price</label>
         <input type="number" name="" id="" step="0.01" />
 
         <label for="">Discount Percentage</label>
-        <input type="number" name="" id="" min="0" max="100" placeholder="0-100" />
+        <input type="number" name="" id="" min="0" max="100" placeholder="0-100" /><br>
 
         <label for="">Subtotal</label>
         <input type="number" name="" id="" readonly />
 
         <label for="">Tax/VAT</label>
-        <input type="number" name="" id="" readonly />
+        <input type="number" name="" id="" readonly /><br>
 
         <label for="">Total Amount</label>
         <input type="number" name="" id="" readonly />
       </fieldset>
-
+<!--payment metthod-->
       <fieldset>
         <legend>Payment Information</legend>
         <label for="">Payment Method</label>
@@ -97,7 +100,7 @@
         <label>
           <input type="radio" name="payment_method" value="credit" />
           Credit
-        </label>
+        </label><br>
 
         <label for="">Amout Paid</label>
         <input type="number" />

@@ -1,0 +1,43 @@
+}
+html {
+  background-color: #eeeeee;
+}
+h1 {
+    text-align: center;
+    background: linear-gradient(to right, #001f5b, #4da6ff);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+form {
+  margin: 20px;
+  background-color: lightgray;
+  max-width: 600px;
+ 
+}
+input{
+    margin: 5px;
+    border:  1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+button{
+     background-color: #4CAF50;
+  color: white;
+  padding: 12PX 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16PX;
+  cursor: pointer;
+  margin: 10px;
+       
+}

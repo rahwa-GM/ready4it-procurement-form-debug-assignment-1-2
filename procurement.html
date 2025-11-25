@@ -14,14 +14,13 @@
         <fieldset class="supplier-information">
             <legend class="header">Supplier Information</legend>
 
-        
-    <label for="" >Supplier Name</label><br>
-    <input type="text" placeholder="Enter Supplier Name" required>
-
-
-  
-    <label for="" class="suppier">Supplier Contact</label><br>
-    <input type="tel" placeholder="+256xxxxxxxxx" required>
+     <div class="container">    
+    <label for=""class="suppier" >Supplier Name : </label><br>
+    <input class="suppier-input" type="text" placeholder="Enter Supplier Name" required>
+    
+    <label for="" class="suppier">Supplier Contact : </label><br>
+    <input class="suppier-input"  "tel" placeholder="+256xxxxxxxxx" required>   
+    </div> 
         </fieldset>
 <!-- Purchase Details -->
     <fieldset>
@@ -29,7 +28,7 @@
         <label for="">Purchase Date</label>
     <input type="date">
 
-         <label for="">Invoice Number</label>
+         <label for="">Invoice Number :</label>
     <input type="text" placeholder="Enter Invoice Number" required> 
 
         <input type="file" id="" name="" accept="image/*">
@@ -55,13 +54,13 @@
         <option value="">Groceries</option>
         <option value="">Other</option>
     </select>
-    <label for="">Quantity</label>
+    <label for="">Quantity:</label>
     <input type="number" required>  
 
-    <label for="">Unit Price</label>
+    <label for="">Unit Price :</label>
     <input type="number" step="0.01" >
 
-      <label for="">Total Amount</label>
+      <label for="">Total Amount : </label>
     <input type="number" readonly>  
 
 
@@ -90,7 +89,7 @@
   </label>
  
 
-<label for="">Payment Status</label>
+<label for="">Payment Status : </label>
     <input type="radio" name="payment_status" value="paid">
     Paid
   </label>
@@ -102,14 +101,14 @@
   </label>
 
 
-  <label for="">Delivery Date</label>
+  <label for="">Delivery Date :</label>
     <input type="date">
 
 </fieldset>
   
 
 
-    <button type="submit">Submit</button>
+    <button type="submit" >Submit</button>
     <button type="submit">Reset</button>
     
     </form>
