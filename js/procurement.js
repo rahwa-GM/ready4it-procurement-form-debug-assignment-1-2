@@ -8,7 +8,7 @@ function validateProcurement(sourceType, tonnage) {
     throw new Error('Tonnage is required');
   }
   // Must be numeric
-  else if (isNaN(tonnage)) {
+  else if (Number.isNaN(Number(tonnage))) {
     // syntax error: missing closing quotation mark
     // throw new Error("Tonnage must be a number);
     // fix
