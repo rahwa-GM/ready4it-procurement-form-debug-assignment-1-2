@@ -1,0 +1,46 @@
+{
+  "name": "karibu_groceries_ltd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "lint": "eslint js/procurement.js procurement.html",
+    "lint:fix": "eslint js/procurement.js procurement.html --fix",
+    "format": "prettier --write js/procurement.js procurement.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahwa-GM/ready4it-procurement-form-debug-assignment-1-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rahwa-GM/ready4it-procurement-form-debug-assignment-1-2/issues"
+  },
+  "homepage": "https://github.com/rahwa-GM/ready4it-procurement-form-debug-assignment-1-2#readme",
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-html": "^8.1.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.7.4"
+  },
+  "lint-staged": {
+    "js/procurement.js": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "procurement.html": [
+      "prettier --write"
+    ]
+  }
+}
