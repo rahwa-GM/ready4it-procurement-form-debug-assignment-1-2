@@ -1,118 +1,117 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Procurement page</title>
-    <link rel="stylesheet" href="./css/procurement.css">
+  <meta charset="UTF-8" />
+  <title>KGL – Produce Procurement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/procurement.css" />
 </head>
+
 <body>
-    <div class="overlay"></div>
-    <div class="form-container">
-    <form action="">
-        <h1>Procurement Entry Form</h1>
-<!-- Supplier Information -->
-        <fieldset class="supplier-information">
-            <legend class="header">Supplier Information</legend>
+<div class="bg"></div>
 
-     <div class="container">    
-    <label for=""class="suppier" >Supplier Name : </label><br>
-    <input class="suppier-input" type="text" placeholder="Enter Supplier Name" required>
-    
-    <label for="" class="suppier">Supplier Contact : </label><br>
-    <input class="suppier-input"  "tel" placeholder="+256xxxxxxxxx" required>   
-    </div> 
-        </fieldset>
-<!-- Purchase Details -->
+<div class="form-container">
+  <h1>Produce Procurement – Manager</h1>
+
+  <!-- <div class="page-link">
+    <a href="sales.html">Go to Sales Page →</a>
+  </div> -->
+
+  <form>
+
+    <!-- Source Information -->
     <fieldset>
-        <legend class="header">Purchase Details</legend>
-        <label for="">Purchase Date</label>
-    <input type="date">
+      <legend class="header">Produce Source</legend>
 
-         <label for="">Invoice Number :</label>
-    <input type="text" placeholder="Enter Invoice Number" required> 
+      <div class="form-group">
+        <label>Source Type</label>
+        <select required>
+          <option value="">Select Source</option>
+          <option>Individual Dealer</option>
+          <option>Company</option>
+          <option>KGL Farm – Maganjo</option>
+          <option>KGL Farm – Matugga</option>
+        </select>
+      </div>
 
-        <input type="file" id="" name="" accept="image/*">
+      <div class="form-group">
+        <label>Dealer / Company Name</label>
+        <input type="text" minlength="2" required />
+      </div>
 
-           <textarea name="" id="" placeholder="Notes/Description"></textarea>
-
-
+      <div class="form-group">
+        <label>Contact</label>
+        <input type="tel" placeholder="+2567xxxxxxxx or 07xxxxxxxx" pattern="(\+2567[0-9]{8}|07[0-9]{8})" title="Enter a valid Uganda phone number e.g. 0701234567 or +256701234567" required>
+      </div>
     </fieldset>
 
+    <!-- Produce Information -->
+    <fieldset>
+      <legend class="header">Produce Details</legend>
 
-    <!-- Product Information -->
-<fieldset>
-    <legend class="header">Product Information</legend>
+      <div class="form-group">
+        <label>Produce Name</label>
+        <select required>
+          <option>Beans</option>
+          <option>Grain Maize</option>
+          <option>Cow Peas</option>
+          <option>G-Nuts</option>
+          <option>Soybeans</option>
+        </select>
+      </div>
 
-            <label for="">Product Name</label>
-    <input type="text" placeholder="Enter Product Name" required>
+      <div class="form-group">
+        <label>Produce Type</label>
+        <input type="text" minlength="2" required />
+      </div>
 
-      <label for="">Product Category</label>
-    <select name="" id="">Product Category
-        <option value="">Electronics</option>  
-        <option value="">Furniture</option>
-        <option value="">Stationery</option>
-        <option value="">Groceries</option>
-        <option value="">Other</option>
-    </select>
-    <label for="">Quantity:</label>
-    <input type="number" required>  
+      <div class="form-group">
+        <label>Tonnage (KG)</label>
+        <input type="number" min="100" required />
+      </div>
 
-    <label for="">Unit Price :</label>
-    <input type="number" step="0.01" >
+      <div class="form-group">
+        <label>Cost Price (UGX)</label>
+        <input type="number" min="10000" required />
+      </div>
 
-      <label for="">Total Amount : </label>
-    <input type="number" readonly>  
+      <div class="form-group">
+        <label>Selling Price (UGX)</label>
+        <input type="number" min="10000" required />
+      </div>
+    </fieldset>
 
+    <!-- Stocking Information -->
+    <fieldset>
+      <legend class="header">Stocking Information</legend>
 
-</fieldset>
- 
+      <div class="form-group">
+        <label>Branch</label>
+        <select required>
+          <option>Maganjo</option>
+          <option>Matugga</option>
+        </select>
+      </div>
 
-<!-- Payment Information -->
-<fieldset>
-    <legend class="header">Payment Information</legend>
-<label for="">Payment Method</label>
-     <label>
-    <input type="radio" name="payment_method" value="Cash" required>
-    Cash
-  </label>
-   <label>
-    <input type="radio" name="payment_method" value="Mobile" >
-    Mobile Money
-  </label>
-   <label>
-    <input type="radio" name="payment_method" value="bank_transfer">
-    Bank Transfer
-  </label>
-   <label>
-    <input type="radio" name="payment_method" value="credit">
-    Credit
-  </label>
- 
+      <div class="form-group">
+        <label>Date</label>
+        <input type="date" required />
+      </div>
 
-<label for="">Payment Status : </label>
-    <input type="radio" name="payment_status" value="paid">
-    Paid
-  </label>
-    <input type="radio" name="payment_status" value="pending">
-    Pending
-  </label>
-    <input type="radio" name="payment_status" value="partial">
-    Partial
-  </label>
+      <div class="form-group">
+        <label>Time</label>
+        <input type="time" required />
+      </div>
+    </fieldset>
 
+    <button type="submit" class="btn">Save</button>
+    <button type="reset" class="btn">Clear</button>
 
-  <label for="">Delivery Date :</label>
-    <input type="date">
-
-</fieldset>
-  
-
-
-    <button type="submit" >Submit</button>
-    <button type="submit">Reset</button>
-    
-    </form>
+  </form>
 </div>
-   
+
+<script src="./js/procurement.js"></script>
 </body>
 </html>
